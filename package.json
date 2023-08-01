@@ -1,0 +1,22 @@
+{
+  "name": "p2rf-stack",
+  "version": "1.0.0",
+  "description": "P2RF Stack",
+  "main": "index.js",
+  "repository": "git@github.com:lutfi-haslab/mystack.git",
+  "author": "lutfi-haslab <work.lutfiikbalmajid@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "ui",
+    "api"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace ui dev\" \"yarn workspace api dev\"",
+    "build": "yarn workspace ui build",
+    "start": "yarn workspace ui start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
