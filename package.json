@@ -1,0 +1,28 @@
+{
+  "name": "hi-elysia",
+  "version": "1.0.44",
+  "scripts": {
+    "db:push": "bunx drizzle-kit push:sqlite",
+    "db:studio": "bunx drizzle-kit studio",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
+    "tw": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css",
+    "tw:dev": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css --watch"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.5.2",
+    "@elysiajs/swagger": "^0.5.2",
+    "@libsql/client": "^0.3.1",
+    "@prisma/client": "^5.0.0",
+    "concurrently": "^8.2.0",
+    "drizzle-orm": "^0.27.2",
+    "elysia": "latest",
+    "prisma": "^5.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "tailwindcss": "^3.3.3",
+    "typed-html": "^3.0.1"
+  },
+  "module": "src/index.js"
+}
