@@ -1,0 +1,17 @@
+{
+  "name": "node-play",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lutfi-haslab/mystack.git",
+  "author": "lutfi-haslab <work.lutfiikbalmajid@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@popeindustries/lit-html-server": "^6.1.0",
+    "fastify": "^4.21.0",
+    "typed-html": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.7"
+  }
+}
